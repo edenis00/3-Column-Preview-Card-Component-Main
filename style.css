@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lexend+Deca:wght@100..900&display=swap');
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
 * {
     margin: 0;
     padding: 0;
@@ -13,18 +20,19 @@ body {
     justify-content: center;
     align-items: center;
     padding: 25px;
-    background: hsl(0, 0%, 95%);
+    background: var(--Very-light-gray);
 }
 
 .main{
     max-width: 900px;
     display: flex;
+    height: 50vh;
 }
 
 .left{
     width: 100%;
     color: #fff;
-    background: hsl(31, 77%, 52%);
+    background: var(--Bright-orange);
     padding: 45px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -32,13 +40,13 @@ body {
 .center{
     width: 100%;
     color: #fff;
-    background: hsl(184, 100%, 22%);
+    background: var(--Dark-cyan);
     padding: 45px;
 }
 .right{
     width: 100%;
     color: #fff;
-    background: hsl(179, 100%, 13%);
+    background: var(--Very-dark-cyan);
     padding: 45px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -68,13 +76,13 @@ a{
     font-size: 15px;
 }
 .left a{
-    color: hsl(31, 77%, 52%);
+    color: var(--Bright-orange);
 }
 .center a{
-    color: hsl(184, 100%, 22%);
+    color: var(--Dark-cyan);
 }
 .right a{
-    color: hsl(179, 100%, 13%);
+    color: var(--Very-dark-cyan);
 }
 a:hover {
     color: #fff;

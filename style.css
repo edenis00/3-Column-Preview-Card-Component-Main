@@ -26,7 +26,7 @@ body {
 .main{
     max-width: 900px;
     display: flex;
-    height: 50vh;
+    height: 70vh;
 }
 
 .left{
